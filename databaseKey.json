@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smartmeter-v1",
+  "private_key_id": "5d66f8c0b4cae529975e9e52712e5e51a7059063",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDL/WQzTGO4OblO\n9xWCqEckP+O5FAnAcIDwgyQ/5rDnXIq6Y7XuTP/Ae8BiYrsjEMs2S6BkgeUWK4uh\nXJtLHOtZRYoPSqx3s9Z6U/785r2e1uoVDYemmwAg5RKgHC7SHLmNTAD1YLmO4Cr5\nbpXALZXh7d6oWrQo4wRwFZJlsWGJ0xP0ER/AATCYAmblXUaWVvibWMWdPo+hOSOE\nLCW0z++82KgSpVZrut6K6NsFa50gL/ULHML/yi7dzYAILbglS8/74pBFHlyhnaGh\nEglo+cD0ilj4FRm3FJ/w8Wwl4X44Gwx+OILCWSTt5ki22tP3FKzi4wbLUJrnURfV\nrcuQD81tAgMBAAECggEABsJNHSQFU9fZy4OFW3Bu9wUE6x9+WTmBFDcMLu/aYbgf\nwqBGKXC0srCHBduGntlSGmj0FhB1wj/MHxsd7CW3qJwUwH/1afvz+dappsCQfOBb\nHjp2Ca+uF+jvLo3wgTbBcSyZBYhgbZsA4YXoAVehVTyX+ZUTzh0DiyEz2hnABRyB\noEJjNys1Zb4rMxMG9a+11Vw8ckHywIdfKqKoVoCEqwxrJNm52G+vl04jryZTRxdL\n0QIThu0P0CmmcOx1BLUTRutnPHsT+XJ+IrOD2LUqe6QA6FWPxuUlX1KAwSTAMgmw\n1suM6TwDTUBsOJWWiZJb9RondmMrHsebye0DI69+gwKBgQD7v9FCgHbfBkzXCsfE\nWKpU0pYb/wUoe+SQWnoexJMw7BXKFN7XbrgknIbzFiPeLPZg6n/5vMr9nmzBK3if\n/E3v9hPVFgLMJ7UsOn0jo0tGEbT5PzodVO3oCxAysmljZCT0ZQyXhahv9TnG0Qro\nfgTdQj5YXHw9CHX/IJ3IVJ2LowKBgQDPbyJk/i3EOUiFCcXH8rwUxjexKe/0rS9b\ndWbvC/Vmvj37QWavxqjFuKfvNbgLpeE6903pvYivEdFCmLJFlnE7rvWs/ej+lVJQ\nmIyy0Syo4uTe8gk+s72lZJF2UwxuM6SlZGYh9rsi0IFr6QSLMji3OolhzImQZJN4\nQPaojQLTrwKBgBwGvsUoiBNMIEHQcWzqcgv/Zba4LVrUcB2h9PZ36+sGXWah7C0P\npnBs/JkTXereFo+zi4vB+NdDS9g1frhQ3lxYiNywFp+jzAege038X+TtE7ir0Uxy\nqAmtMaBzPEhUXcjXdw9nUdkk88mufAhl/ySiu04a/bnNt1UvzGEBCokBAoGAJENY\nbvFkjNY60E8qDU9pA/S3Dbi4Iz0Xd1Sp3wZnK0P8z+zaB8aiAJbMfOwWNasVGdrb\n+w3QVFK4E31gRPwM5ZMrjceBsOfn0QEqL6STux6XRkZnyVdgwwY2y8mu9aD/mo5X\nsH5Srr5msbe1vKPV+Go6VCeOsPh0M2Sf+k1Ufi8CgYAjEJGZdaPdzL5xjArYWVcV\naLVN6tE5004IatNgzxBApLPKUD8tmmrf/Gg2R5rHbY9ETW9BoIkf92BYNriUpBSA\nULVCoYkc9aCh63FnXGKtQrxzRoYDxY2qdsoJweCUmk3UypHtuoKRCyLWiN/IHSxv\n5X3hYhgMI4wppCKYAvRjPg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-y480z@smartmeter-v1.iam.gserviceaccount.com",
+  "client_id": "112473609696303780211",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-y480z%40smartmeter-v1.iam.gserviceaccount.com"
+}
