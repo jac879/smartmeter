@@ -50,6 +50,10 @@ parser.on('data', (data)=>{
             for (var i = arr.length - 1; i >= 0; i--) {
               if(arr[i] == null || arr[i] == undefined) {
                 varsAreUndefined = true;
+                console.log("undefined " + arr[i]);
+              }else {
+
+                console.log("defined " + arr[i]);
               }
             }
 
