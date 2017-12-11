@@ -35,7 +35,7 @@ setInterval(sendData, 10*1000);
 
 //set up to listen to strings from port
 var Readline = new SerialPort.parsers.Readline;
-var port = new SerialPort('COM10');
+var port = new SerialPort('/dev/ttyACM0');
 
 // break sting up into individual data packets
 var parser = port.pipe(new SerialPort.parsers.Readline({delimiter: '\n'}));
@@ -45,11 +45,28 @@ parser.on('data', (data)=>{
 
 	 		//populate an object with the data from serial.
             var obj = {};
-            obj['rmsPower'] = arr[0];
-            obj['rmsCurrent1'] = arr[1];
-            obj['rmsVoltage1'] = arr[2];
-            obj['rmsCurrent2'] = arr[3];
-            obj['rmsVoltage2'] = arr[4];
+            varsAreUndefined = false;
+
+            for (var i = arr.length - 1; i >= 0; i--) {
+              if(arr[i] == null || arr[i] == undefined) {
+                varsAreUndefined = true;
+              }
+            }
+
+            if(varsAreUndefined) {
+              obj['rmsPower'] = 0.0;
+              obj['rmsCurrent1'] = 0.0;
+              obj['rmsVoltage1'] = 0.0;
+              obj['rmsCurrent2'] = 0.0;
+              obj['rmsVoltage2'] = 0.0;
+
+            } else {
+              obj['rmsPower'] = arr[0];
+              obj['rmsCurrent1'] = arr[1];
+              obj['rmsVoltage1'] = arr[2];
+              obj['rmsCurrent2'] = arr[3];
+              obj['rmsVoltage2'] = arr[4];
+            }
             
             
             var timeRn = Date.now();
