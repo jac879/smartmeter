@@ -48,7 +48,7 @@ parser.on('data', (data)=>{
             varsAreUndefined = false;
 
             for (var i = arr.length - 1; i >= 0; i--) {
-              if(arr[i] == null || arr[i] == undefined || arr[i] == "") {
+              if(arr[i] == null || arr[i] == undefined || arr[i] == "" || typeof(arr[i]) == "undefined") {
                 varsAreUndefined = true;
                 console.log("undefined " + arr[i]);
               }else {
