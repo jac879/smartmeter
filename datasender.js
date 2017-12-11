@@ -58,7 +58,7 @@ parser.on('data', (data)=>{
               }
             }
 
-            if(varsAreUndefined) {
+            if(varsAreUndefined == true) {
               obj['rmsPower'] = 0.0;
               obj['rmsCurrent1'] = 0.0;
               obj['rmsVoltage1'] = 0.0;
