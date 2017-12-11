@@ -45,36 +45,28 @@ parser.on('data', (data)=>{
 
 	 		//populate an object with the data from serial.
             var obj = {};
-            varsAreUndefined = false;
 
-            for (var i = arr.length - 1; i >= 0; i--) {
-              if(arr[i] == null || arr[i] == undefined || arr[i] == "" || typeof(arr[i]) == "undefined") {
-                varsAreUndefined = true;
-                console.log("undefinedz ");
-                arr[i] = 0.0;
-              }else {
+            if(arr[0]){
+              obj['rmsPower'] = arr[0];
+            }
+            if(arr[1]){
+              obj['rmsCurrent1'] = arr[1];
+            }
+            if(arr[2]){
+              obj['rmsVoltage1'] = arr[2];
 
-                console.log("defined " + arr[i]);
-              }
             }
 
-            if(varsAreUndefined == true) {
-              console.log("ALL ZEROS =================================")
-              obj['rmsPower'] = 0.0;
-              obj['rmsCurrent1'] = 0.0;
-              obj['rmsVoltage1'] = 0.0;
-              obj['rmsCurrent2'] = 0.0;
-              obj['rmsVoltage2'] = 0.0;
-
-            } else {
-
-              console.log("ALL values ++++++++++++++++++++++++++++++++++")
-              obj['rmsPower'] = arr[0];
-              obj['rmsCurrent1'] = arr[1];
-              obj['rmsVoltage1'] = arr[2];
+            if(arr[3]){
               obj['rmsCurrent2'] = arr[3];
+
+            }
+
+            if(arr[4]){
+              
               obj['rmsVoltage2'] = arr[4];
             }
+            
             
             
             var timeRn = Date.now();
