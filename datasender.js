@@ -59,6 +59,7 @@ parser.on('data', (data)=>{
             }
 
             if(varsAreUndefined == true) {
+              console.log("ALL ZEROS =================================")
               obj['rmsPower'] = 0.0;
               obj['rmsCurrent1'] = 0.0;
               obj['rmsVoltage1'] = 0.0;
@@ -66,6 +67,8 @@ parser.on('data', (data)=>{
               obj['rmsVoltage2'] = 0.0;
 
             } else {
+
+              console.log("ALL values ++++++++++++++++++++++++++++++++++")
               obj['rmsPower'] = arr[0];
               obj['rmsCurrent1'] = arr[1];
               obj['rmsVoltage1'] = arr[2];
