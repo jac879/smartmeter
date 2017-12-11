@@ -35,7 +35,7 @@ setInterval(sendData, 10*1000);
 
 //set up to listen to strings from port
 var Readline = new SerialPort.parsers.Readline;
-var port = new SerialPort('COM9');
+var port = new SerialPort('COM10');
 
 // break sting up into individual data packets
 var parser = port.pipe(new SerialPort.parsers.Readline({delimiter: '\r\n'}));

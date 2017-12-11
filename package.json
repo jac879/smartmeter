@@ -1,0 +1,23 @@
+{
+  "name": "fu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "datasender.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jac879/smartmeter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jac879/smartmeter/issues"
+  },
+  "homepage": "https://github.com/jac879/smartmeter#readme",
+  "dependencies": {
+    "firebase-admin": "^5.5.1",
+    "serialport": "^6.0.4"
+  }
+}
