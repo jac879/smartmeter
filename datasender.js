@@ -28,7 +28,7 @@ function sendData() {
    timeStart = time;
    mainObj[timeStart] = {};
 
-   console.log(mainObj);
+  // console.log(mainObj);
 
 }
 setInterval(sendData, 10*1000);
@@ -38,7 +38,7 @@ var Readline = new SerialPort.parsers.Readline;
 var port = new SerialPort('COM10');
 
 // break sting up into individual data packets
-var parser = port.pipe(new SerialPort.parsers.Readline({delimiter: '\r\n'}));
+var parser = port.pipe(new SerialPort.parsers.Readline({delimiter: '\n'}));
 parser.on('data', (data)=>{
 
 	 var arr = data.split("_");
@@ -56,8 +56,7 @@ parser.on('data', (data)=>{
 
             mainObj[timeStart][timeRn] = obj;
 
-
-        console.log(obj);
+      //  console.log(obj);
         
 
 
