@@ -47,7 +47,10 @@ parser.on('data', (data)=>{
             var obj = {};
             obj['rmsPower'] = arr[0];
             obj['rmsCurrent1'] = arr[1];
-            obj['rmsCurrent2'] = arr[2];
+            obj['rmsVoltage1'] = arr[2];
+            obj['rmsCurrent2'] = arr[3];
+            obj['rmsVoltage2'] = arr[4];
+            
             
             var timeRn = Date.now();
 
