@@ -60,6 +60,8 @@ var port = new SerialPort('/dev/ttyACM0');
 var parser = port.pipe(new SerialPort.parsers.Readline({delimiter: '\n'}));
 parser.on('data', (data)=>{
 
+	console.log(data);
+
 	 var arr = data.split("_");
 
 	 		//populate an object with the data from serial.
