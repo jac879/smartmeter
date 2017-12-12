@@ -43,7 +43,7 @@ function sendGraphData() {
    timeContainer[time] = latestObj;
    console.log(latestObj);
 
-   admin.database().ref("liveGraph").update(latestObj);
+   admin.database().ref("liveGraph").update(timeContainer);
 
    timeContainer = {};
    latestObj = {};
