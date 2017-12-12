@@ -13,11 +13,13 @@ admin.initializeApp({
 
 //init a blank object with a timestamp to start dumping data into.
 let mainObj = {};
+let latestObj = {};
+let timeContainer = {};
 let timeStart = Date.now();
 mainObj[timeStart] = {};
 
 // this function logs that data to the database every 10 seconds.
-function sendData() {
+function sendPacketData() {
 
    var time = Date.now();
 
@@ -31,7 +33,24 @@ function sendData() {
   // console.log(mainObj);
 
 }
-setInterval(sendData, 10*1000);
+setInterval(sendPacketData, 10*1000);
+
+// this function logs that data to the database every 10 seconds.
+function sendGraphData() {
+
+   var time = Date.now();
+
+   timeContainer[time] = latestObj;
+   console.log(latestObj);
+
+   admin.database().ref("liveGraph").update(latestObj);
+
+   timeContainer = {};
+   latestObj = {};
+
+
+}
+setInterval(sendGraphData, 1000);
 
 //set up to listen to strings from port
 var Readline = new SerialPort.parsers.Readline;
@@ -68,10 +87,10 @@ parser.on('data', (data)=>{
             }
             
             
-            
             var timeRn = Date.now();
 
             mainObj[timeStart][timeRn] = obj;
+            latestObj = obj;
 
       //  console.log(obj);
         
