@@ -50,7 +50,7 @@ function sendGraphData() {
 
 
 }
-setInterval(sendGraphData, 1000);
+setInterval(sendGraphData, 3*1000);
 
 //set up to listen to strings from port
 var Readline = new SerialPort.parsers.Readline;
