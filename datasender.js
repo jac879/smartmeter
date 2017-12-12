@@ -54,7 +54,7 @@ setInterval(sendGraphData, 1000);
 
 //set up to listen to strings from port
 var Readline = new SerialPort.parsers.Readline;
-var port = new SerialPort('/dev/ttyACM0', {baudRate: 57600});
+var port = new SerialPort('/dev/ttyACM0', {baudRate: 115200});
 
 // break sting up into individual data packets
 var parser = port.pipe(new SerialPort.parsers.Readline({delimiter: '\n'}));
